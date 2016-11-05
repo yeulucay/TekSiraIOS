@@ -8,9 +8,10 @@
 
 import UIKit
 
-class HomeController: UITableViewController {
+class HomeController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var queueButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class HomeController: UITableViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        queueButton.titleLabel?.textAlignment = NSTextAlignment.Center
+        queueButton.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        
     }
     
     override func didReceiveMemoryWarning() {

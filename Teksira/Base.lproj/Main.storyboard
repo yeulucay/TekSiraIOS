@@ -20,8 +20,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="7a1-x6-adv" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Y3G-8O-HP2"/>
                         <segue destination="jNP-ch-bEP" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="LOc-JU-p9V"/>
+                        <segue destination="N5l-em-Y0I" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Zo6-08-Vtl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,44 +88,77 @@
             <point key="canvasLocation" x="1013" y="112"/>
         </scene>
         <!--Home Controller-->
-        <scene sceneID="Etd-BT-IaK">
+        <scene sceneID="MAE-Ty-1du">
             <objects>
-                <viewController id="oGL-sZ-ZoT" customClass="HomeController" customModule="Teksira" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7U5-wY-Gxd">
+                <viewController id="uiz-or-2Tk" customClass="HomeController" customModule="Teksira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZ8-r1-A5P"/>
+                        <viewControllerLayoutGuide type="bottom" id="1O3-8L-TX1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kh7-UC-KVw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8NK-dC-bvv">
+                                <rect key="frame" x="250" y="480" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.67965066019999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AoX-U0-GSZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="qrU-Qg-Kv8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                <color key="tintColor" red="0.9744873046875" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Sıraya  Gir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.23405863660633447" green="0.26856690327452098" blue="0.45278092616580312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMaskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="xrI-tX-ivp">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="XRv-Pa-ubj">
-                            <color key="tintColor" red="0.83243604274611394" green="0.19347474241752996" blue="0.24791939490990092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1O3-8L-TX1" firstAttribute="top" secondItem="8NK-dC-bvv" secondAttribute="bottom" constant="20" id="bAr-98-5Ix"/>
+                            <constraint firstItem="8NK-dC-bvv" firstAttribute="centerX" secondItem="Kh7-UC-KVw" secondAttribute="centerX" id="t5P-Iq-nzT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ILh-QF-H1h">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="C7b-1m-27j">
+                            <color key="tintColor" red="0.83243604270000005" green="0.19347474240000001" blue="0.24791939490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="XRv-Pa-ubj" id="zaB-Ai-qBg"/>
+                        <outlet property="menuButton" destination="C7b-1m-27j" id="xUe-cr-Gnn"/>
+                        <outlet property="queueButton" destination="8NK-dC-bvv" id="gTQ-me-HoV"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XSW-vm-CwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuS-PJ-VzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="-593"/>
+            <point key="canvasLocation" x="1711" y="-663"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="PJa-Do-eig">
+        <scene sceneID="4TV-dA-Zjn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7a1-x6-adv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N5l-em-Y0I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lEu-kt-S3k">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CLQ-MF-7rS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oGL-sZ-ZoT" kind="relationship" relationship="rootViewController" id="D9r-0S-jF6"/>
+                        <segue destination="uiz-or-2Tk" kind="relationship" relationship="rootViewController" id="biA-G4-LkH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Abp-xj-qpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5j-Cn-Eol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="-593"/>
+            <point key="canvasLocation" x="1013" y="-663"/>
         </scene>
     </scenes>
     <resources>
