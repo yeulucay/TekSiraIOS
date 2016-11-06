@@ -126,7 +126,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-jC-EUz">
-                                <rect key="frame" x="170" y="164" width="260" height="228"/>
+                                <rect key="frame" x="170" y="164" width="260" height="248"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-JD-qmr">
                                         <rect key="frame" x="82" y="10" width="96" height="96"/>
@@ -138,19 +138,28 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sırada Değilsiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayv-q5-Cit">
                                         <rect key="frame" x="0.0" y="126" width="260" height="32"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="23"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" red="0.48231017589569092" green="0.48238128423690796" blue="0.4822877049446106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.73170336787564771" green="0.73170336787564771" blue="0.73170336787564771" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="eO1-d1-Xkd">
+                                        <rect key="frame" x="98" y="179" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="ZEo-kI-eYD"/>
+                                            <constraint firstAttribute="width" constant="64" id="xVN-ZD-GAL"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ZBz-JD-qmr" firstAttribute="top" secondItem="w5b-jC-EUz" secondAttribute="top" constant="10" id="7cK-3W-N98"/>
-                                    <constraint firstAttribute="height" constant="228" id="9af-oV-r8e"/>
+                                    <constraint firstAttribute="height" constant="248" id="9af-oV-r8e"/>
+                                    <constraint firstAttribute="bottom" secondItem="eO1-d1-Xkd" secondAttribute="bottom" constant="5" id="DKA-Ku-m47"/>
                                     <constraint firstItem="ayv-q5-Cit" firstAttribute="leading" secondItem="w5b-jC-EUz" secondAttribute="leading" id="OUU-de-qHX"/>
                                     <constraint firstAttribute="width" constant="260" id="QqH-r5-dHx"/>
                                     <constraint firstItem="ZBz-JD-qmr" firstAttribute="centerX" secondItem="w5b-jC-EUz" secondAttribute="centerX" id="cpp-u9-3re"/>
                                     <constraint firstAttribute="trailing" secondItem="ayv-q5-Cit" secondAttribute="trailing" id="jbA-dG-JPl"/>
-                                    <constraint firstAttribute="bottom" secondItem="ayv-q5-Cit" secondAttribute="bottom" constant="70" id="vHA-MZ-bkE"/>
+                                    <constraint firstItem="eO1-d1-Xkd" firstAttribute="centerX" secondItem="w5b-jC-EUz" secondAttribute="centerX" id="nj2-EZ-tkP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ayv-q5-Cit" secondAttribute="bottom" constant="90" id="vHA-MZ-bkE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -430,6 +439,7 @@
     </scenes>
     <resources>
         <image name="MenuIcon" width="22" height="22"/>
+        <image name="arrow-down" width="128" height="128"/>
         <image name="fast-food" width="24" height="24"/>
         <image name="line" width="128" height="128"/>
         <image name="menu" width="24" height="24"/>
