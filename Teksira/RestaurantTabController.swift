@@ -15,5 +15,4 @@ class RestaurantTabController: UITabBarController {
         
         self.navigationController?.navigationBar.hidden = true
     }
-    
 }

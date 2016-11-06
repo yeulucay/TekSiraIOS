@@ -17,9 +17,8 @@ class RestaurantMenuController: UITableViewController {
         
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = false
-        
+        self.navigationController?.navigationBar.topItem?.title = "Kategoriler"
     }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,6 +43,4 @@ class RestaurantMenuController: UITableViewController {
         
         return cell
     }
-    
-    
 }

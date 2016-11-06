@@ -125,10 +125,40 @@
                                     <segue destination="rIs-Sx-FpC" kind="show" id="LOJ-z3-SLG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-jC-EUz">
+                                <rect key="frame" x="170" y="164" width="260" height="228"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-JD-qmr">
+                                        <rect key="frame" x="82" y="10" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="THn-4c-lLJ"/>
+                                            <constraint firstAttribute="width" constant="96" id="heo-mS-RL1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sırada Değilsiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayv-q5-Cit">
+                                        <rect key="frame" x="0.0" y="126" width="260" height="32"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZBz-JD-qmr" firstAttribute="top" secondItem="w5b-jC-EUz" secondAttribute="top" constant="10" id="7cK-3W-N98"/>
+                                    <constraint firstAttribute="height" constant="228" id="9af-oV-r8e"/>
+                                    <constraint firstItem="ayv-q5-Cit" firstAttribute="leading" secondItem="w5b-jC-EUz" secondAttribute="leading" id="OUU-de-qHX"/>
+                                    <constraint firstAttribute="width" constant="260" id="QqH-r5-dHx"/>
+                                    <constraint firstItem="ZBz-JD-qmr" firstAttribute="centerX" secondItem="w5b-jC-EUz" secondAttribute="centerX" id="cpp-u9-3re"/>
+                                    <constraint firstAttribute="trailing" secondItem="ayv-q5-Cit" secondAttribute="trailing" id="jbA-dG-JPl"/>
+                                    <constraint firstAttribute="bottom" secondItem="ayv-q5-Cit" secondAttribute="bottom" constant="70" id="vHA-MZ-bkE"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85990291339745795" green="0.85990291339745795" blue="0.85990291339745795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="w5b-jC-EUz" firstAttribute="top" secondItem="BZ8-r1-A5P" secondAttribute="bottom" constant="100" id="BCB-2Z-pEg"/>
                             <constraint firstItem="1O3-8L-TX1" firstAttribute="top" secondItem="8NK-dC-bvv" secondAttribute="bottom" constant="20" id="bAr-98-5Ix"/>
+                            <constraint firstItem="w5b-jC-EUz" firstAttribute="centerX" secondItem="Kh7-UC-KVw" secondAttribute="centerX" id="pVJ-bE-yz0"/>
                             <constraint firstItem="8NK-dC-bvv" firstAttribute="centerX" secondItem="Kh7-UC-KVw" secondAttribute="centerX" id="t5P-Iq-nzT"/>
                         </constraints>
                     </view>
@@ -401,6 +431,7 @@
     <resources>
         <image name="MenuIcon" width="22" height="22"/>
         <image name="fast-food" width="24" height="24"/>
+        <image name="line" width="128" height="128"/>
         <image name="menu" width="24" height="24"/>
     </resources>
 </document>
